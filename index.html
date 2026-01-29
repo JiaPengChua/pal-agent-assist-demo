@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script>
-    window.adaSettings = {
-      parentElement: "customAdaContainer",
-      handle: "demo-pal-agent-assist",
-      cluster: "us2"
+
+  <script 
+    async 
+      data-lazy
+    id="__ada" 
+    src="https://static.ada.support/embed2.js"
+  ></script>
+  <script type="text/javascript">
+    window.onload = () => {
+      window.adaEmbed.start({
+        parentElement: "customAdaContainer",
+        handle: "demo-pal-agent-assist",
+        cluster: "us2"
+    })
     };
   </script>
 
-<script
-  src="https://static.ada.support/embed2.js"
-></script>
 <style>
   #customAdaContainer {
-    display: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -28,4 +33,9 @@
 </style>
 
 </head>
+
+<body>
+    <div id="customAdaContainer"></div>
+</body>
+
 </html>
