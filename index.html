@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ada Salesforce Demo</title>
+    <style>
+      html, body { height: 100%; margin: 0; }
+    </style>
+  </head>
+  <body>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const handle = params.get("handle") || "demo-pal-agent-assist";
+      const cluster = "us2";
+
+      const s = document.createElement("script");
+      s.async = true;
+      s.id = "__ada";
+      s.src = "https://static.ada.support/embed2.js";
+      s.setAttribute("data-handle", handle);
+      s.setAttribute("data-cluster", cluster);
+
+      document.body.appendChild(s);
+    </script>
+  </body>
+</html>
