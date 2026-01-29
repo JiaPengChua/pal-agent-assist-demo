@@ -3,6 +3,7 @@
 <head>
   <script>
     window.adaSettings = {
+      parentElement: "customAdaContainer",
       handle: "demo-pal-agent-assist",
       cluster: "us2"
     };
@@ -11,6 +12,20 @@
 <script
   src="https://static.ada.support/embed2.js"
 ></script>
+<style>
+  #customAdaContainer {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 9999;
+  }
+</style>
 
 </head>
 </html>
